@@ -71,14 +71,17 @@
   font-size: 15px;
   transition: max-height 0.8s ease-in-out, opacity 0.8s ease-in-out;
 }
+
 .faq-button-container {
   text-align: center;
   margin-top: 30px;
 }
+
 .faq-item.open .faq-javob {
-  max-height: 500px; 
+  max-height: 500px;
   opacity: 1;
 }
+
 .faq-button {
   border: 3px solid #F8D900;
   background: whitesmoke;

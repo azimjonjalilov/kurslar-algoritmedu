@@ -1,5 +1,14 @@
 import './Faq.css';
 import { useState } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
+
+AOS.init();
+AOS.init({
+  delay: 0,
+  duration: 1000,
+});
 
 const Savolar = [
   {
@@ -56,11 +65,11 @@ function Faq() {
           </p>
         </div>
       </div>
-      <div className="faq-container">
+      <div className="faq-container" data-aos="fade-up">
         <h2 className="faq-title">Ko‘p so‘raladigan savollar</h2>
         <div className="faq-list">
           {Savolar.map((item, index) => (
-            <div
+            <div 
               key={index}
               className={`faq-item ${openIndex === index ? 'open' : ''}`}
             >
