@@ -56,26 +56,29 @@
   border-radius: 5px;
 }
 
-
 .big-container {
   width: 100%;
   min-height: 100vh;
-  /* Ekran balandligini to'liq qoplaydi */
   background: #000;
   position: absolute;
 }
 
 .faq-javob {
-  margin-top: 10px;
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
   color: white;
   font-size: 15px;
+  transition: max-height 0.8s ease-in-out, opacity 0.8s ease-in-out;
 }
-
 .faq-button-container {
   text-align: center;
   margin-top: 30px;
 }
-
+.faq-item.open .faq-javob {
+  max-height: 500px; 
+  opacity: 1;
+}
 .faq-button {
   border: 3px solid #F8D900;
   background: whitesmoke;
@@ -95,18 +98,12 @@
 .marquee-container {
   width: 100%;
   overflow: hidden;
-  background: black;
-}
-
-.marquee-container {
-  width: 100%;
-  overflow: hidden;
   background: #f8d900;
 }
 
 .marquee-text {
   width: 200%;
-  /* TEXTNI UZOQLASHTIRAMIZ, TO'LDIRISH UCHUN */
+  height: 50px;
   display: flex;
   align-items: center;
 }

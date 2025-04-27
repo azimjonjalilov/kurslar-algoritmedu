@@ -1,5 +1,6 @@
 import './Faq.css';
 import { useState } from 'react';
+
 const Savolar = [
   {
     Savol: "SMM Pro kursi bitiruvchilariga ish taklif qilinadimi?",
@@ -55,22 +56,21 @@ function Faq() {
           </p>
         </div>
       </div>
-
-
       <div className="faq-container">
         <h2 className="faq-title">Ko‘p so‘raladigan savollar</h2>
         <div className="faq-list">
           {Savolar.map((item, index) => (
-            <div key={index} className="faq-item">
+            <div
+              key={index}
+              className={`faq-item ${openIndex === index ? 'open' : ''}`}
+            >
               <div className="faq-savol" onClick={() => btn(index)}>
                 <p>{item.Savol}</p>
                 <span>{openIndex === index ? '×' : '+'}</span>
               </div>
-              {openIndex === index && (
-                <div className="faq-javob">
-                  {item.javob}
-                </div>
-              )}
+              <div className="faq-javob">
+                {item.javob}
+              </div>
             </div>
           ))}
         </div>
@@ -79,7 +79,6 @@ function Faq() {
         <button className="faq-button">Batafsil</button>
       </div>
     </div>
-
   );
 }
 
