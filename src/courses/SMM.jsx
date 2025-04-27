@@ -1,7 +1,19 @@
 import React from "react";
+import Header from "../components/header/Header";
+
 
 const SMM = () => {
-  return <div>SMM</div>;
+
+  return (
+    <>
+         <Header/>
+        <div>
+
+        </div>
+    </>
+   
+   
+  )
 };
 
 export default SMM;
