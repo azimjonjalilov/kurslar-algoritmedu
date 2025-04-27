@@ -47,7 +47,15 @@ function Faq() {
   };
 
   return (
-    <div>
+    <div className='big-container'>
+      <div className="marquee-container">
+        <div className="marquee-text">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          </p>
+        </div>
+      </div>
+
 
       <div className="faq-container">
         <h2 className="faq-title">Ko‘p so‘raladigan savollar</h2>
@@ -67,9 +75,9 @@ function Faq() {
           ))}
         </div>
       </div>
-        <div className="faq-button-container">
-          <button className="faq-button">Batafsil</button>
-        </div>
+      <div className="faq-button-container">
+        <button className="faq-button">Batafsil</button>
+      </div>
     </div>
 
   );

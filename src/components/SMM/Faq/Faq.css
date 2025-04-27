@@ -1,3 +1,9 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .faq-container {
   width: 600px;
   margin: 50px auto;
@@ -36,7 +42,6 @@
 }
 
 .faq-savol span {
-  border: 2px solid #1A1919;
   font-size: 27px;
   user-select: none;
   color: #F8D900;
@@ -46,16 +51,18 @@
 }
 
 .faq-savol:hover span {
-  border: 2px solid #F8D900;
   width: 30px;
   text-align: center;
   border-radius: 5px;
-  background: #000;
 }
 
 
-body {
+.big-container {
+  width: 100%;
+  min-height: 100vh;
+  /* Ekran balandligini to'liq qoplaydi */
   background: #000;
+  position: absolute;
 }
 
 .faq-javob {
@@ -83,6 +90,45 @@ body {
 .faq-button:hover {
   background: #F8D900;
   color: white;
+}
+
+.marquee-container {
+  width: 100%;
+  overflow: hidden;
+  background: black;
+}
+
+.marquee-container {
+  width: 100%;
+  overflow: hidden;
+  background: #f8d900;
+}
+
+.marquee-text {
+  width: 200%;
+  /* TEXTNI UZOQLASHTIRAMIZ, TO'LDIRISH UCHUN */
+  display: flex;
+  align-items: center;
+}
+
+.marquee-text p {
+  display: inline-block;
+  white-space: nowrap;
+  font-family: sans-serif;
+  color: black;
+  font-size: 24px;
+  margin: 0;
+  animation: marquee 7s linear infinite;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+
+  100% {
+    transform: translateX(-14%);
+  }
 }
 
 @media (max-width: 450px) {
