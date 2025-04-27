@@ -1,7 +1,11 @@
-import React from "react";
+import Faq from './components/SMM/Faq/Faq'
 
-const App = () => {
-  return <div>App</div>;
-};
+function App() {
+  return (
+    <div>
+      <Faq />
+    </div>
+  )
+}
 
-export default App;
+export default App
