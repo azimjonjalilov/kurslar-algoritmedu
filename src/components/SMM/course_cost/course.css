@@ -26,7 +26,6 @@
   border-radius: 12px;
   padding: 30px;
   margin-bottom: 40px;
-  box-shadow: 0 0 20px rgba(248, 217, 0, 0.2);
 }
 
 .kurs-filial h4 {
@@ -50,7 +49,6 @@
   width: 280px;
   text-align: center;
   transition: transform 0.3s, box-shadow 0.3s;
-  box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
 }
 
 .kurs-card:hover {
