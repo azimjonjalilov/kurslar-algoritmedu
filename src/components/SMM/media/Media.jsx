@@ -197,7 +197,7 @@ function Media(){
                 ))}
 
             </div>
-
+                
             </div>
             <Skills/>
         </div>
