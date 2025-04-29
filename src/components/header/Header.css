@@ -1,16 +1,22 @@
 
 .header {
     width: 100%;
-    /* background-color: #ffffff; */
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    background-attachment: auto;
+    backdrop-filter: blur(55px);
+    background-color: transparent  ;
+    position: fixed;
+    border: 1px solid rgb(67, 62, 62);
+    z-index: 3;
+    
   }
   
   .navbar {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 5px 50px;
-    position: relative;
+    padding: 15px 50px;
+    /* background-color: #333; */
+   
     img{
         width: 30px;
         height: 30px;
@@ -63,6 +69,7 @@
     border: 1px solid #ddd;
     padding: 20px;
     display: none;
+    z-index: 3;
   }
 
   .nav-links.open {

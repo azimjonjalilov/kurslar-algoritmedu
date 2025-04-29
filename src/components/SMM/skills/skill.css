@@ -1,0 +1,140 @@
+.skills {
+    padding: 3rem 0;
+  }
+  
+  .skills-title {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: bold;
+    color: white;
+
+  }
+  
+  .highlight {
+    color: #F8D900;
+  }
+  
+  .skills-list {
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    align-items: center;
+  }
+  
+  .skill-item {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    width: 90%;
+    max-width: 900px;
+    /* background-color: #e6dbdb; */
+
+  }
+  
+  .skill-number {
+    font-size: 11rem;
+    font-weight: bold;
+    color: #989292;
+    flex-shrink: 0;
+    opacity: 0.3;
+
+  }
+  
+  .skill-text {
+    width: 350px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: #fff;
+    margin-top: -90px;
+    margin-left: 90px;
+  }
+  .skill-item:nth-child(odd){
+    justify-content: left;
+  }
+  .skill-item:nth-child(even){
+    justify-content: right;
+  }
+  .students_result{
+    text-align: center;
+    margin-top: 60px;
+  }
+  .students_result h2{
+    font-size: 2.5rem;
+    color: white;
+  }
+  .students_result h2 span{
+    color: #F8D900;
+  }
+  .students_result p{
+    color: #F8D900;
+    font-size: 18px;
+    margin-top: 30px;
+  }
+  .duration_card h2{
+    color: #F8D900;
+    font-size: 50px;
+  }
+  .duration_card p{
+    color: white;
+  }
+  .Companys{
+    text-align: center;
+
+  }
+
+  .company_logos{
+    padding: 30px 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 90px;
+    gap: 70px;
+  }
+  .company_logos img{
+    width: 160px;
+  }
+  @media(max-width:500px){
+    .skill-item{
+      width: 100%;
+      justify-content: center;
+    }
+    .skill-item:nth-child(odd){
+      justify-content: center;
+    }
+    .skill-item:nth-child(even){
+      justify-content: center;
+    }
+    .skill-item{
+      width: 100%;
+      height: auto;
+      margin-left: 15%;
+
+    }
+    .skills-title{
+      font-size: 35px;
+    }
+    .skills-list{
+      justify-content: center;
+    }
+    .skill-number {
+      width: 100%;
+      font-size: 8rem;
+    }
+    .students_result h2{
+      font-size: 35px;
+      padding: 0 10px;
+    }
+    .students_result p{
+      font-size: 16px;
+    }
+    .skill-text {
+      width: 60%;
+      font-size: 1rem;
+      font-weight: 500;
+      color: #fff;
+      margin-top: -90px;
+      margin-left: 90px;
+    }
+  }

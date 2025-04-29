@@ -1,0 +1,169 @@
+.course_duration{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 60px 0;
+}
+.duration_card{
+    padding: 30px;
+    text-align: center;
+}
+.duration_card h2{
+    color: #F8D900;
+    font-size: 50px;
+    padding: 20px 90px;
+    border-bottom: 1px solid white;
+}
+.duration_card p{
+    color: white;
+    font-size: 20px;
+    margin-top: 20px;
+    
+}
+.graduates_wrapper{
+    height: auto;
+    text-align: center;
+    padding: 50px 10px;
+    h2{
+        color: #F8D900;
+        font-size: 40px;
+    }
+}
+.video_wrapper{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+.SmmCourse_forwho {
+    text-align: center;
+    padding: 40px 0;
+    h2{
+        margin-bottom: 20px;
+        color: #F8D900;
+        font-size: 40px;
+    }
+  }
+  
+  .cards_wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    padding: 50px 0;
+  }
+  
+  .card_who {
+    width: 350px;
+    text-align: left;
+    display: flex;
+    gap: 20px;
+  }
+  .cardwho_texts h3{
+    color: white;
+  }
+  .cardwho_texts p{
+    color: rgb(154, 147, 147);
+    margin-top: 10px;
+  }
+  
+  .circle {
+    min-width: 50px;
+    height: 50px;
+    background-color: #F8D900;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+
+  .requirements {
+    padding: 2rem;
+    width: 100%;
+  }
+  
+  .requirements-title {
+    font-size: 2.3rem;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+  }
+  
+  .highlight {
+    color: #F8D900;
+  }
+  
+  .requirements-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 2.5rem;
+    justify-content: center;
+    gap: 2rem;
+    /* padding: 20px 100px; */
+  }
+  
+  .requirement-item {
+    display: flex;
+    align-items: center;
+    width: 400px;
+  }
+  
+  .requirement-icon {
+    font-size: 2rem;
+    margin-right: 1rem;
+  }
+  
+  .requirement-title {
+    font-weight: bold;
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+    color: #F8D900;
+  }
+  
+  .requirement-subtitle {
+    color: #fff;
+    font-size: 1rem;
+  }
+  hr{
+    width: 60%;
+    margin-top: 10px;
+    color: #F8D900;
+  }
+
+
+
+  @media(max-width:500px){
+    .video_wrapper video{
+      width: 90%;
+      height: auto;
+    }
+    .requirement-title{
+      font-size: 35px;
+    }
+    .requirement-item{
+      width: 90%;
+    }
+    .requirements{
+      padding: 10px;
+    }
+    .requirement-title {
+      font-weight: bold;
+      font-size: 1.2rem;
+      margin-bottom: 10px;
+      color: #F8D900;
+    }
+    
+    .requirement-subtitle {
+      color: #fff;
+      font-size: 0.6rem;
+    }
+  }

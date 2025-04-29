@@ -1,0 +1,133 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.kurs-container {
+  width: 100%;
+  background: #000;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* padding: 50px 20px; */
+  font-family: Arial, sans-serif;
+}
+
+.kurs-title {
+  text-align: center;
+  color: #F8D900;
+  margin-bottom: 40px;
+  font-size: 32px;
+}
+
+.kurs-filial {
+  background: #1A1919;
+  border-radius: 12px;
+  padding: 30px;
+  margin-bottom: 40px;
+}
+
+.kurs-filial h4 {
+  color: #F8D900;
+  font-size: 24px;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.kurs-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.kurs-card {
+  background: #2C2B2B;
+  border-radius: 10px;
+  padding: 20px;
+  width: 280px;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.kurs-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 20px rgba(248, 217, 0, 0.5);
+}
+
+.kurs-card h5 {
+  color: #F8D900;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.kurs-card h2 {
+  color: white;
+  font-size: 26px;
+  margin-bottom: 10px;
+}
+
+.kurs-card p {
+  color: #ccc;
+  font-size: 15px;
+  margin-bottom: 15px;
+}
+
+.kurs-card button {
+  padding: 10px 30px;
+  border-radius: 25px;
+  background: #F8D900;
+  border: none;
+  font-size: 16px;
+  color: black;
+  cursor: pointer;
+  transition: background 0.3s, color 0.3s;
+}
+
+.kurs-card button:hover {
+  background: white;
+  color: black;
+}
+
+@media (max-width: 768px) {
+  .kurs-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .kurs-card {
+    width: 90%;
+  }
+
+  .kurs-filial {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 450px) {
+  .kurs-title {
+    font-size: 26px;
+  }
+
+  .kurs-filial h4 {
+    font-size: 20px;
+  }
+
+  .kurs-card h5 {
+    font-size: 18px;
+  }
+
+  .kurs-card h2 {
+    font-size: 22px;
+  }
+
+  .kurs-card p {
+    font-size: 14px;
+  }
+
+  .kurs-card button {
+    padding: 8px 25px;
+    font-size: 14px;
+  }
+}

@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    font-family: sans-serif;
+
+}
+.Smm_Main{
+    width: 100%;
+    height: 700px;
+    background-color: antiquewhite;
+    background-image: url(/src/assets/female-entrepreneur-.jpg.webp);
+    background-size: cover;
+    background-position: right
+    ;
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 700px;
+    background-color: rgba(0, 0, 0, 0.7); /* yarim qora */
+    z-index: 1;
+    text-align: center;
+}
+.overlay h1{
+    color: white;
+    margin-top: 200px;
+    font-size: 70px;
+    font-family: sans-serif;
+}
+.overlay p{
+    font-size: 19px;
+    color: white;
+    margin-top: 20px;
+}
+.overlay h1 span{
+    color: #F8D900;
+    margin-top: 200px;
+    font-size: 70px;
+    font-family: sans-serif;
+}
+.overlay button{
+    padding: 15px 40px;
+    border-radius: 20px;
+    border: none;
+    background-color: #F8D900;
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 40px;
+
+}
+.marquee-container {
+  width: 100%;
+  overflow: hidden;
+  background: #f8d900;
+
+}
+.marquee-text{
+    background-color: #F8D900;
+}
+.marquee-text {
+    width: 200%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .marquee-text p {
+    display: inline-block;
+    white-space: nowrap;
+    font-family: sans-serif;
+    color: black;
+    font-size: 20px;
+    margin: 0;
+    animation: marquee 7s linear infinite;
+  }
+  
+  @keyframes marquee {
+    0% {
+      transform: translateX(0%);
+    }
+  
+    100% {
+      transform: translateX(-14%);
+    }
+  }
+@media(max-width: 968px){
+    .overlay h1, .overlay h1 span{
+        font-size: 50px;
+        padding: 10px;
+    }
+}
+@media(max-width: 632px){
+    .overlay h1 , .overlay h1 span{
+        font-size: 40px;
+        padding: 10px;
+    }
+}

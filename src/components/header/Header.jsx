@@ -11,7 +11,7 @@ const Header = () => {
       <nav className="navbar">
 	  	<div className="Navbar_top">
 		  <img src={logo} alt="Logo" className="logo" />
-		<h2>Algaritm</h2>
+		<h2>Algoritm</h2>
 		</div>
 
         <div className="hamburger" onClick={() => setOpen(!open)}>

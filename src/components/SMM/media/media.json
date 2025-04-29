@@ -1,0 +1,33 @@
+[
+    {
+      "id": 1,
+      "title": "Zamonaviy kasbni egallamoqchi bo'lganlar",
+      "description": "Ushbu soha eng so'nggi zamonaviy kasblardan hisoblanadi."
+    },
+    {
+      "id": 2,
+      "title": "O'z kasbini o'zgartirishni istaganlar",
+      "description": "Agar o'z kasbingizdan qoniqmayotgan yoki hozirgi kasbingizda o'z kelajagingizni ko'rmayotgan bo'lsangiz."
+    },
+    {
+      "id": 3,
+      "title": "Qisqa vaqt ichida kasb egallashni istaganlar",
+      "description": "Ushbu sohani 4 oyda boshlang'ich darajada egallab, dastlabki mijozlar bilan ishlash mumkin."
+    },
+    {
+      "id": 4,
+      "title": "O'z bilimlarini mustahkamlashni istaganlar",
+      "description": "Agar siz SMM yo'nalishini bilsangiz va yangi bilimlarni o'rganmoqchi bo'lsangiz."
+    },
+    {
+      "id": 5,
+      "title": "Qo'shimcha kasb egasi bo'lishni istaganlar",
+      "description": "Agar siz kundalik hayotda o'qish yoki ishlardan ortiqcha vaqtingiz bo'lsa, qo'shimcha kasb egallab, daromad topishingiz mumkin."
+    },
+    {
+      "id": 6,
+      "title": "O'z biznesini internet orqali rivojlantirishni istaganlar",
+      "description": "Biznesni rivojlantirish uchun eng samarali yechimlardan biri bu ijtimoiy tarmoqlardir. SMM'ni o'rganish orqali buni o'z biznesingizga tatbiq qilishingiz mumkin."
+    }
+  ]
+  
