@@ -27,7 +27,9 @@
   padding: 30px;
   margin-bottom: 40px;
 }
-
+.registration-form h2 strong{
+  color: black;
+}
 .kurs-filial h4 {
   color: #F8D900;
   font-size: 24px;

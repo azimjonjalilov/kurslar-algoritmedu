@@ -52,7 +52,7 @@ const RegistrationForm = () => {
   return (
     <form className="registration-form" onSubmit={handleSubmit}>
       <h2>Zamonaviy kasblargacha<br />1 qadam qoldi</h2>
-      <p><strong>SMM Pro kursi uchun hoziroq ro'yxatdan o'ting!</strong></p>
+      <p>SMM Pro kursi uchun hoziroq ro'yxatdan o'ting!</p>
 
       <input
         type="text"

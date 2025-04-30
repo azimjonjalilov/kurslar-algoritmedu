@@ -60,6 +60,7 @@
 
 .big-container {
   width: 100%;
+  padding: 30px 0;
   min-height: 100vh;
   background: #000;
   position: absolute;
@@ -95,8 +96,8 @@
 }
 
 .faq-button {
-  border: 3px solid #F8D900;
-  background: whitesmoke;
+  /* border: 3px solid #F8D900; */
+  background: #F8D900;
   color: black;
   padding: 10px 40px;
   border-radius: 30px;
@@ -105,9 +106,10 @@
   transition: background 0.3s, color 0.3s;
 }
 
+
 .faq-button:hover {
-  background: #F8D900;
-  color: white;
+  background: #fff;
+  color: black;
 }
 
 .marquee-container {
@@ -133,6 +135,7 @@
   margin: 0;
   animation: marquee 7s linear infinite;
 }
+
 
 @keyframes marquee {
   0% {

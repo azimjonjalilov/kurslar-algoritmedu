@@ -1,4 +1,6 @@
 import "./media.css"
+
+import CountUp from 'react-countup';
 import data from "./Media.json";
 import { useState } from 'react';
 
@@ -11,6 +13,7 @@ AOS.init({
   delay: 0,
   duration: 1500,
 });
+    
     const Savollar = [
         {
         savol: "1-bo'lim. Marketing va ijtimoiy tarmoqlarga kirish",
@@ -97,16 +100,18 @@ function Media(){
         <div className="Media">
             <div className="course_duration">
                 <div className="duration_card">
-                    <h2>4 oy</h2>
+                   <h2><CountUp end={4} duration={2} enableScrollSpy scrollSpyOnce /> oy</h2> 
+
                     <p>Davomiyligi</p>
                 </div>
                 <div className="duration_card">
-                      <h2>3 kun</h2>
+                    <h2><CountUp end={3} duration={2} enableScrollSpy scrollSpyOnce /> kun</h2>
                       <p>Haftada</p>
 
                 </div>
                 <div className="duration_card">
-                     <h2>2 soat</h2>
+                    <h2><CountUp end={2} duration={2} enableScrollSpy scrollSpyOnce /> soat</h2>
+
                     <p>Dars soati</p>
                 </div>
             </div>
@@ -197,7 +202,7 @@ function Media(){
                 ))}
 
             </div>
-                
+
             </div>
             <Skills/>
         </div>

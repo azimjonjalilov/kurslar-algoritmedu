@@ -10,6 +10,8 @@ import mediaPark from "/src/assets/Media_Park.png"
 import Sevimli from "/src/assets/Sevimli_TV.png"
 import Xon from "/src/assets/Xon_Saroy.png"
 import factor from "/src/assets/MFaktor.png"
+import CountUp from 'react-countup';
+
 
 const Skills = () => {
   const skills = [
@@ -58,32 +60,32 @@ const Skills = () => {
       <p>2023-yil yanvar oyidan 2023-yil dekabr oyiga qadar olingan statistika</p>
         <div className="course_duration">
             <div className="duration_card">
-                <h2>4 oy</h2>
+                <h2><CountUp end={218} duration={2} enableScrollSpy scrollSpyOnce /> nafar</h2>
                 <p>Davomiyligi</p>
             </div>
             <div className="duration_card">
-                  <h2>3 kun</h2>
+                  <h2><CountUp end={208} duration={2} enableScrollSpy scrollSpyOnce /> nafar</h2>
                   <p>Haftada</p>
 
             </div>
             <div className="duration_card">
-                <h2>2 soat</h2>
+                <h2><CountUp end={95} duration={2} enableScrollSpy scrollSpyOnce />.2 %</h2>
                 <p>Dars soati</p>
             </div>
         </div>
         <h2 className="students_salary">Bitiruvchilarning o‘rtacha oylik daromadlari</h2>
         <div className="course_duration">
             <div className="duration_card">
-                <h2>87$</h2>
+                <h2><CountUp end={87} duration={2} enableScrollSpy scrollSpyOnce />$</h2>
                 <p>eng past maosh</p>
             </div>
             <div className="duration_card">
-                  <h2>301$</h2>
+                  <h2><CountUp end={301} duration={2} enableScrollSpy scrollSpyOnce />$</h2>
                   <p>o‘rtacha maosh</p>
 
             </div>
             <div className="duration_card">
-                <h2>1300$</h2>
+                <h2><CountUp end={300} duration={2} enableScrollSpy scrollSpyOnce />$</h2>
                 <p>eng yuqori maosh</p>
             </div>
         </div>

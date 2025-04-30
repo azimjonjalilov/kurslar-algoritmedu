@@ -1,7 +1,9 @@
 import './Faq.css';
 import { useState } from 'react';
+
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import RegistrationForm from '../enroll_in/enroll_in';
 
 
 AOS.init();
@@ -50,6 +52,7 @@ const Savolar = [
 ];
 
 function Faq() {
+  const [open, setOpen]=useState(false)
   const [openIndex, setOpenIndex] = useState(null);
 
   const btn = (index) => {
@@ -85,7 +88,15 @@ function Faq() {
         </div>
       </div>
       <div className="faq-button-container">
-        <button className="faq-button">Batafsil</button>
+        <button onClick={()=> setOpen(true)} className="faq-button">Batafsil</button>
+        {open && (
+          <div className="modal" onClick={() => setOpen(false)}>
+            <div className="modal-content" onClick={e => e.stopPropagation()}>
+              <button className="close-button" onClick={() => setOpen(false)}>×</button>
+              <RegistrationForm />
+            </div>
+          </div>
+        )}
       </div>
     </div>
   );
