@@ -65,10 +65,22 @@
     cursor: pointer;
     transition: background-color 0.3s ease;
   }
-  
+
 
 @media(max-width:400px){
   .registration-form{
     width: 90%;
+  }
+  .registration-form h2{
+    font-size: 20px;
+  }
+  .registration-form p{
+    font-size: 13px;
+  }
+  .registration-form button{
+    width: 50%;
+    height: 40px;
+    font-size: 12px ;
+    margin: 0;
   }
 }

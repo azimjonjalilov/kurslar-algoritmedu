@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
 import PhoneInput from 'react-phone-input-2';
 import 'react-phone-input-2/lib/style.css';
-import './enrolin.css'; 
+import './enrolin.css';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const RegistrationForm = () => {
   const [fullName, setFullName] = useState('');
@@ -12,31 +14,23 @@ const RegistrationForm = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-  
+
     if (!agreed) {
-      alert("Shaxsiy ma'lumotlarga rozilik belgilang!");
+      toast.warning("Shaxsiy ma'lumotlarga rozilik belgilang!");
       return;
     }
-  
-    const formData = {
-      name:fullName,
-      phone,
-      branch,
-      course,
-    };
-  
+
+    const formData = { name: fullName, phone, branch, course };
+
     try {
-      const response = await fetch('https://script.google.com/macros/s/AKfycbwZS_0PLPFSShKeqLTNj6-r_sLw8uYWe1bDjk6rZptlarzCUfEDHwFDWQX2ce6OXxqW/exec', {
+      await fetch('https://script.google.com/macros/s/AKfycbwZS_0PLPFSShKeqLTNj6-r_sLw8uYWe1bDjk6rZptlarzCUfEDHwFDWQX2ce6OXxqW/exec', {
         method: 'POST',
-        mode: 'no-cors', // Required for Google Apps Script
-        headers: {
-          'Content-Type': 'application/json',
-        },
+        mode: 'no-cors',
+        headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(formData),
       });
-  
-      alert('Ro‘yxatdan o‘tish muvaffaqiyatli yuborildi!');
-      
+
+      toast.success('Ro‘yxatdan o‘tish muvaffaqiyatli yuborildi!');
       setFullName('');
       setPhone('');
       setBranch('Toshkent');
@@ -44,13 +38,13 @@ const RegistrationForm = () => {
       setAgreed(false);
     } catch (error) {
       console.error('Xatolik:', error);
-      alert('Xatolik yuz berdi. Qaytadan urinib ko‘ring.');
+      toast.error('Xatolik yuz berdi. Qaytadan urinib ko‘ring.');
     }
   };
-  
 
   return (
-    <form className="registration-form" onSubmit={handleSubmit}>
+    <>
+      <form className="registration-form" onSubmit={handleSubmit}>
       <h2>Zamonaviy kasblargacha<br />1 qadam qoldi</h2>
       <p>SMM Pro kursi uchun hoziroq ro'yxatdan o'ting!</p>
 
@@ -95,7 +89,10 @@ const RegistrationForm = () => {
       </label>
 
       <button type="submit">RO'YXATDAN O'TISH</button>
-    </form>
+    
+      </form>
+      <ToastContainer />
+    </>
   );
 };
 

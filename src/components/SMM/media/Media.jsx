@@ -115,7 +115,7 @@ function Media(){
                     <p>Dars soati</p>
                 </div>
             </div>
-            <div className="graduates_wrapper">
+             <div className="graduates_wrapper">
                 <h2>Kurs bitiruvchilari bilan suhbat</h2>
                 <div className="video_wrapper">
                     <video controls width="500" height={300}>
@@ -147,7 +147,7 @@ function Media(){
                 Kelajak kasblarini biz bilan o'rganing!  Kelajak kasblarini biz bilan o'rganing! Kelajak kasblarini biz bilan o'rganing! Kelajak kasblarini biz bilan o'rganing!  Kelajak kasblarini biz bilan o'rganing! Kelajak kasblarini biz bilan o'rganing!  Kelajak kasblarini biz bilan o'rganing!
                 </p>
             </div>
-             </div>
+            </div>
             <div className="Course_lesson">
             <div className="faq-container" data-aos="fade-up">
             <h2 className="faq-title">Ko‘p so‘raladigan savollar</h2>
@@ -204,7 +204,7 @@ function Media(){
             </div>
 
             </div>
-            <Skills/>
+            <Skills/> 
         </div>
     )
 }

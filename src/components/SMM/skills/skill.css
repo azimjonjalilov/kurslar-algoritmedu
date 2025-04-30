@@ -144,3 +144,15 @@
       margin-left: 90px;
     }
   }
+  @media(max-width:432px){
+    .students_result h2{
+      font-size: 30px;
+      padding: 0 10px;
+    }
+    .students_result p{
+      padding: 0 10px;
+    }
+    .company_logos{
+      padding: 10px;
+    }
+  }

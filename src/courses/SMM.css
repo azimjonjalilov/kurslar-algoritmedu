@@ -45,7 +45,7 @@
     font-size: 70px;
     font-family: sans-serif;
 }
-.overlay button{
+.overlay .register{
     padding: 15px 40px;
     border-radius: 20px;
     border: none;
@@ -96,16 +96,16 @@
     position: fixed;
     top: 0;
     left: 0;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 1);
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 999;
+    z-index: 9;
   }
   
   .modal-content {
     /* background: white; */
-    padding: 2rem;
+    padding:0 2rem;
     border-radius: 8px;
     position: relative;
     min-width: 300px;
@@ -118,15 +118,7 @@
     left: 49%;
   }
   
-  .close-button {
-    position: absolute;
-    top: 10px;
-    right: 15px;
-    background: none;
-    border: none;
-    font-size: 24px;
-    cursor: pointer;
-  }
+ 
   .registration-form p{
     color: black;
   }
@@ -136,11 +128,18 @@
     color: white;
     padding: 12px;
     border: none;
-    font-size: 18px;
+    font-size: 12px;
     border-radius: 25px;
     font-weight: bold;
     cursor: pointer;
     transition: background-color 0.3s ease;
+  }
+  .close-btn{
+    color: rgb(0, 0, 0);
+    font-size: 22px;
+    position: absolute;
+    right: 10%;
+    top: 10%;
   }
 @media(max-width: 968px){
     .overlay h1, .overlay h1 span{
@@ -154,4 +153,25 @@
         padding: 10px;
         margin-top:130px;
     }
+}
+@media(max-width: 432px){
+  .overlay h1 , .overlay h1 span{
+      font-size: 30px;
+      padding: 10px;
+      margin-top:130px;
+  }
+  .overlay p{
+    font-size: 16px;
+    padding: 0 10px;
+  }
+  /* .overlay button{
+    padding: 10px 30px;
+    font-size: 16px;
+
+  } */
+  .modal-content {
+    /* background: white; */
+    padding: 1rem;
+  
+  }
 }
