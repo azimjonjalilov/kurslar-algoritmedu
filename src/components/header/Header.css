@@ -4,7 +4,7 @@
     background-attachment: auto;
     backdrop-filter: blur(55px);
     background-color: transparent  ;
-    /* position: fixed; */
+    position: fixed;
     border: 1px solid rgb(67, 62, 62);
     z-index: 3;
     
