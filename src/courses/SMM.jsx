@@ -44,7 +44,7 @@ const SMM = () => {
            <Media/>
          <Course_cost setOpen={setOpen}/>
            <RegistrationForm/>
-          <Faq/>
+          <Faq setOpen={setOpen}/>
         </div>
     </>
    

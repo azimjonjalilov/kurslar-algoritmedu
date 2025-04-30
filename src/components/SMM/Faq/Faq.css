@@ -135,7 +135,13 @@
   margin: 0;
   animation: marquee 7s linear infinite;
 }
-
+.close-btn{
+  color: rgb(0, 0, 0);
+  font-size: 22px;
+  position: absolute;
+  right: 10%;
+  top: 10%;
+}
 
 @keyframes marquee {
   0% {
@@ -169,12 +175,16 @@
 
 @media (max-width: 450px) {
   .faq-container {
-    width: 95%;
+    width: 100%;
     /* padding: 10px; */
   }
 
   .faq-title {
     font-size: 20px;
+  }
+  .faq-list{
+    /* margin: 0 auto; */
+    padding-left: 30px;
   }
 
  
@@ -194,5 +204,8 @@
   .faq-button {
     padding: 8px 20px;
     font-size: 14px;
+  }
+  .faq-container{
+    margin: 0;
   }
 }

@@ -51,8 +51,7 @@ const Savolar = [
   }
 ];
 
-function Faq() {
-  const [open, setOpen]=useState(false)
+function Faq({ setOpen }) {
   const [openIndex, setOpenIndex] = useState(null);
 
   const btn = (index) => {
@@ -89,14 +88,9 @@ function Faq() {
       </div>
       <div className="faq-button-container">
         <button onClick={()=> setOpen(true)} className="faq-button">Batafsil</button>
-        {open && (
-          <div className="modal" onClick={() => setOpen(false)}>
-            <div className="modal-content" onClick={e => e.stopPropagation()}>
-              <button className="close-button" onClick={() => setOpen(false)}>×</button>
-              <RegistrationForm />
-            </div>
-          </div>
-        )}
+        
+         
+
       </div>
     </div>
   );
