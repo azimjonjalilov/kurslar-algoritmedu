@@ -67,4 +67,8 @@
   }
   
 
-  
+@media(max-width:400px){
+  .registration-form{
+    width: 90%;
+  }
+}

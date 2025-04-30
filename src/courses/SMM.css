@@ -3,6 +3,12 @@
     font-family: sans-serif;
 
 }
+.container{
+  width: 100%;
+  box-sizing: content-box;
+  padding: 0;
+  margin: 0 auto;
+}
 .Smm_Main{
     width: 100%;
     height: 100dvh;

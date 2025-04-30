@@ -15,7 +15,7 @@ const SMM = () => {
   };
   return (
     <>  
-        <div>
+        <div className="container">
           <div className="overlay">
           <h1> <span>SMM</span>  sohasini «Algaritm»da <br/> mutaxassislardan o'rganing</h1>
             <p>Qisqa muddatda kasb o'rganib, daromadga chiqing!</p>

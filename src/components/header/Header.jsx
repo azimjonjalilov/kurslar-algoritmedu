@@ -28,7 +28,7 @@ const Header = () => {
           <img src={logo} alt="Logo" className="logo" />
           <h2>Algoritm</h2>
         </div>
-
+      
         <div
           className={`hamburger ${open ? "hamburger--open" : ""}`}
           onClick={() => setOpen(!open)}
