@@ -3,8 +3,11 @@ import Course_cost from "../components/SMM/course_cost/course_cost";
 import Faq from './../components/SMM/Faq/Faq';
 import "./SMM.css"
 import Media from "../components/SMM/media/Media";
+
 import RegistrationForm from "../components/SMM/enroll_in/enroll_in";
 import myGif from '/src//assets/arrow_white.gif';
+import { ToastContainer } from "react-toastify";
+
 
 const SMM = () => {
   const [open, setOpen]=useState(false)
@@ -15,6 +18,7 @@ const SMM = () => {
   };
   return (
     <>  
+     
         <div className="container">
           <div className="overlay">
           <h1> <span>SMM</span>  sohasini «Algaritm»da <br/> mutaxassislardan o'rganing</h1>
@@ -46,6 +50,8 @@ const SMM = () => {
            <RegistrationForm/>
           <Faq setOpen={setOpen}/>
         </div>
+        <ToastContainer position="bottom-right" autoClose={3000}/>
+        
     </>
    
    

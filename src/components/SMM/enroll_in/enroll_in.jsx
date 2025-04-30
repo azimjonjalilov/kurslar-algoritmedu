@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import PhoneInput from 'react-phone-input-2';
 import 'react-phone-input-2/lib/style.css';
 import './enrolin.css';
-import { ToastContainer, toast } from 'react-toastify';
+import {  toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 const RegistrationForm = () => {
@@ -91,7 +91,7 @@ const RegistrationForm = () => {
       <button type="submit">RO'YXATDAN O'TISH</button>
     
       </form>
-      <ToastContainer />
+      
     </>
   );
 };
