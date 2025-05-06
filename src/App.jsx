@@ -1,7 +1,7 @@
 import React from "react";
 import { Link, Routes, Route } from "react-router-dom";
 import SMM from "./courses/SMM.jsx";
-// import Home from './pages/home/Home';
+import Home from './pages/home/Home';
 import Header from './components/header/Header';
 
 
@@ -10,7 +10,9 @@ const App = () => {
 		<>
 		<Header/>
 		<Routes>
-			<Route path="/" element={<SMM />} />
+			<Route path="/" element={<Home />} />
+			<Route path="/Smm" element={<SMM />} />
+
 
 			{/* <Route path="*" element={<NotFound/>}/>  */}
 		</Routes>

@@ -69,21 +69,25 @@ AOS.init({
 
     const requirements = [
       {
+        id:1,
         icon: "🖥️",
         title: "Intel Core i3 (7-avlod)",
         subtitle: "Protsessor",
       },
       {
+        id:2,
         icon: "💾",
         title: "4 GB",
         subtitle: "Tezkor xotira (RAM)",
       },
       {
+        id:3,
         icon: "🛠️",
         title: "Windows 10, 64 razryadli",
         subtitle: "Operatsion sistema",
       },
       {
+        id:4,
         icon: "💽",
         title: "SSD 128 GB yoki HDD 512 GB",
         subtitle: "Asosiy xotira",
@@ -185,11 +189,12 @@ function Media(){
                 <span className="highlight">noutbuk</span>
             </h2>
 
+
             <div className="requirements-list">
             
-                {requirements.map((item, index) => (
-                    <>
-                    <div key={index} className="requirement-item">
+                {requirements.map((item) => (
+                    
+                    <div key={item.id} className="requirement-item">
                         <div className="requirement-icon">{item.icon}</div>
                         <div>
                         <h2 className="requirement-title">{item.title}</h2>
@@ -197,7 +202,7 @@ function Media(){
                         </div>
                     </div>
 
-                    </>
+                    
                     
                 ))}
 

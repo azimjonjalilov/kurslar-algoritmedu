@@ -28,7 +28,7 @@ const Header = () => {
           <img src={logo} alt="Logo" className="logo" />
           <h2>Algoritm</h2>
         </div>
-      
+        
         <div
           className={`hamburger ${open ? "hamburger--open" : ""}`}
           onClick={() => setOpen(!open)}
@@ -38,9 +38,9 @@ const Header = () => {
 
         <ul className={open ? "nav-links open" : "nav-links"}>
           <li><Link to="/" onClick={() => setOpen(false)}>Bosh sahifa</Link></li>
-          <li><Link to="/dasturlash" onClick={() => setOpen(false)}>Dasturlash</Link></li>
-          <li><Link to="/marketing" onClick={() => setOpen(false)}>Marketing</Link></li>
-          <li><Link to="/dizayn" onClick={() => setOpen(false)}>Dizayn</Link></li>
+          <li><Link to="/" onClick={() => setOpen(false)}>Dasturlash</Link></li>
+          <li><Link to="/Smm" onClick={() => setOpen(false)}>Smm</Link></li>
+          <li><Link to="/" onClick={() => setOpen(false)}>Dizayn</Link></li>
         </ul>
       </nav>
     </div>

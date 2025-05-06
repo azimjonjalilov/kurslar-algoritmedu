@@ -3,11 +3,11 @@ import Course_cost from "../components/SMM/course_cost/course_cost";
 import Faq from './../components/SMM/Faq/Faq';
 import "./SMM.css"
 import Media from "../components/SMM/media/Media";
-
+import Footer from "../components/footer/Footer";
 import RegistrationForm from "../components/SMM/enroll_in/enroll_in";
 import myGif from '/src//assets/arrow_white.gif';
 import { ToastContainer } from "react-toastify";
-
+  
 
 const SMM = () => {
   const [open, setOpen]=useState(false)
@@ -21,7 +21,7 @@ const SMM = () => {
      
         <div className="container">
           <div className="overlay">
-          <h1> <span>SMM</span>  sohasini «Algaritm»da <br/> mutaxassislardan o'rganing</h1>
+          <h1> <span>SMM</span>  sohasini «Algoritm»da <br/> mutaxassislardan o'rganing</h1>
             <p>Qisqa muddatda kasb o'rganib, daromadga chiqing!</p>
             <button className="register" onClick={()=> setOpen(true)}>Ro'yxatdan o'tish</button>
             <img src={myGif} alt="anamated_arrow" className="arrow" onClick={handleScroll} />
@@ -51,7 +51,7 @@ const SMM = () => {
           <Faq setOpen={setOpen}/>
         </div>
         <ToastContainer position="bottom-right" autoClose={3000}/>
-        
+        <Footer/>
     </>
    
    
